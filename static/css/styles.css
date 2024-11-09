@@ -1,0 +1,148 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #4267b2;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em; /* Larger header font */
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Bold navigation links */
+}
+
+
+/* Container styles */
+.container {
+  width: 90%;
+  max-width: 960px; /* Adjusted max-width */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4267b2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #365899;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Post styles */
+.post {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.post .post-meta {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.post .post-actions {
+  margin-top: 15px;
+}
+
+.post .post-actions a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #4267b2;
+}
+
+/* Responsive design tweaks */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* New styles for a more visually appealing design */
+.profile-picture {
+  border-radius: 50%; /* Make profile pictures circular */
+  width: 50px; /* Set a standard size */
+  height: 50px;
+  object-fit: cover; /* Ensure image fills the circle */
+  margin-right: 10px; /* Add some spacing */
+}
+
+.post-content {
+  font-size: 1.1em; /* Slightly larger post text */
+  line-height: 1.5; /* More comfortable line height */
+}
+
+.post-image {
+  max-width: 100%; /* Ensure images don't overflow */
+  height: auto;
+  display: block; /* Prevent image from affecting layout */
+  margin-top: 10px;
+}
