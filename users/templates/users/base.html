@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+    <nav>
+        <a href="{% url 'user_list' %}">Home</a> |
+        <a href="{% url 'user_create' %}">Create User</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
