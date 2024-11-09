@@ -1,0 +1,20 @@
+.aider*
+.env
+
+venv
+
+# Django
+*/migrations/*.py
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.py.class
+*/migrations/*.py.swp
+*.pyc
+*.pyo
+*.py.class
+*.swp
+
+# Celery
+celerybeat-schedule*.py
+
+db.sqlite3
