@@ -32,7 +32,8 @@ def user_logout(request):
 
 def home(request):
     posts = Post.objects.all().order_by('-created_at')
-    return render(request, 'social/home.html', {'posts': posts})
+    user = request.user
+    return render(request, 'social/home.html', {'posts': posts, 'user': user})
 
 def create_post(request):
     if request.method == 'POST':
